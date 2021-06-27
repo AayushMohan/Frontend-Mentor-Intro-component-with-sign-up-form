@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+    <!-- Title -->
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Header Content -->
+      <header>
+        <h1>Learn to code by watching others</h1>
+        <p class="header">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <div class="container">
+        <!-- Container-1 -->
+        <div class="container-1">
+          <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+        </div>
+
+        <!-- Box-2 -->
+
+        <form id="form" action="#">
+          <!-- First Name -->
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="First Name"
+              id="first"
+              placeholder="First Name"
+              aria-label="Input for First name"
+            />
+
+            <p id="first-text-error" class="error">
+              First Name cannot be empty
+            </p>
+            <div id="first-error" class="error">
+              <img src="/images/icon-error.svg" alt="error" />
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="Last Name"
+              id="last"
+              placeholder="Last Name"
+              aria-label="Input for Last Name"
+            />
+
+            <p id="last-text-error" class="error">Last Name cannot be empty</p>
+            <div id="last-error" class="error">
+              <img src="/images/icon-error.svg" alt="error" />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="Email"
+              id="email"
+              placeholder="Email Address"
+              aria-label="Input for Email Address"
+            />
+
+            <p id="email-text-error" class="error">
+              Looks like this is not an email
+            </p>
+            <div id="email-error" class="error">
+              <img src="/images/icon-error.svg" alt="error" />
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="Password"
+              id="password"
+              placeholder="Password"
+              aria-label="Input for Password"
+            />
+
+            <p id="password-text-error" class="error">
+              Password cannot be empty named
+            </p>
+            <div id="password-error" class="error">
+              <img src="/images/icon-error.svg" alt="error" />
+            </div>
+          </div>
+
+          <!-- Button -->
+          <button type="submit" class="form-btn" id="button">
+            Claim your free trial
+          </button>
+
+          <!-- Footer -->
+          <div class="footer">
+            By clicking the button, you are agreeing to our
+            <span class="span-1">Terms and Services</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
